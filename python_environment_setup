@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "removing old venv"
+deactivate 2>/dev/null
+rm -rf venv
+
+echo "creating new venv"
+python3 -m venv venv
+source venv/bin/activate
+
+echo "installing dependencies"
+pip install --upgrade pip
+pip install torch pytesseract torchvision transformers pillow accelerate
