@@ -8,7 +8,7 @@ import serial
 from serial.tools import list_ports
 
 
-class CameraConnection:
+class CameraControl:
     PORT = "/dev/ttyUSB0"
     BAUDRATE = 115200
 
